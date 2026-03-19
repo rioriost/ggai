@@ -1,6 +1,6 @@
 [project]
 name = "ggai"
-version = "0.5.4"
+version = "0.5.6"
 description = "Helper for GeoGuessr training using OpenAI"
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { file = "LICENSE" }
@@ -9,9 +9,15 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "openai>=2.26.0",
+    "openai>=2.28.0",
     "pillow>=12.1.1",
     "pyobjc>=12.1",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=9",
+  "pytest-cov>=7",
 ]
 
 [project.scripts]
@@ -25,5 +31,5 @@ build-backend = "hatchling.build"
 exclude = ["__pycache__", "*.rb", "uv.lock", "dist/.DS_Store", ".envrc"]
 
 [project.urls]
-Homepage = "https://github.com/rioriost/homebrew-ggai"
-Issues = "https://github.com/rioriost/homebrew-ggai/issues"
+Homepage = "https://github.com/rioriost/ggai"
+Issues = "https://github.com/rioriost/ggai/issues"

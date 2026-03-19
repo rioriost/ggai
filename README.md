@@ -51,9 +51,9 @@ options:
 
 Create a quickaction with Automator.
 
-![Automator](https://raw.githubusercontent.com/rioriost/homebrew-ggai/refs/heads/main/images/automator-01.png)
-![Automator](https://raw.githubusercontent.com/rioriost/homebrew-ggai/refs/heads/main/images/automator-02.png)
-![Automator](https://raw.githubusercontent.com/rioriost/homebrew-ggai/refs/heads/main/images/automator-03.png)
+![Automator](https://raw.githubusercontent.com/rioriost/ggai/refs/heads/main/images/automator-01.png)
+![Automator](https://raw.githubusercontent.com/rioriost/ggai/refs/heads/main/images/automator-02.png)
+![Automator](https://raw.githubusercontent.com/rioriost/ggai/refs/heads/main/images/automator-03.png)
 
 And, put a script with API key for OpenAI.
 
@@ -67,19 +67,23 @@ EOD
 
 After saving the quickaction as 'ggai', you can call it from 'Services...' menu.
 
-![Automator](https://raw.githubusercontent.com/rioriost/homebrew-ggai/refs/heads/main/images/automator-04.png)
+![Automator](https://raw.githubusercontent.com/rioriost/ggai/refs/heads/main/images/automator-04.png)
 
-![Sample](https://raw.githubusercontent.com/rioriost/homebrew-ggai/refs/heads/main/images/ggai.png)
+![Sample](https://raw.githubusercontent.com/rioriost/ggai/refs/heads/main/images/ggai.png)
 
 ## Release Notes
+
+### 0.5.6 Release
+- Move formula to rioriost/tap
+
+### 0.5.5 Release
+- Dependency update
 
 ### 0.5.4 Release
 - Dependency update
 
-
 ### 0.5.3 Release
 - Dependency update
-
 
 ### 0.5.2 Release
 - Dependency Update
