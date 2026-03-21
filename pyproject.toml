@@ -14,22 +14,38 @@ dependencies = [
     "pyobjc>=12.1",
 ]
 
+[project.urls]
+Homepage = "https://github.com/rioriost/ggai"
+Issues = "https://github.com/rioriost/ggai/issues"
+Repository = "https://github.com/rioriost/ggai"
+
+[project.scripts]
+ggai = "ggai.main:main"
+
 [project.optional-dependencies]
 test = [
   "pytest>=9",
   "pytest-cov>=7",
 ]
 
-[project.scripts]
-ggai = "ggai.main:main"
+[dependency-groups]
+dev = [
+  "build>=1.2.2",
+  "twine>=6.1.0",
+  "ruff>=0.12.0",
+]
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27.0"]
 build-backend = "hatchling.build"
 
-[tool.hatch.build.targets.sdist]
-exclude = ["__pycache__", "*.rb", "uv.lock", "dist/.DS_Store", ".envrc"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
 
-[project.urls]
-Homepage = "https://github.com/rioriost/ggai"
-Issues = "https://github.com/rioriost/ggai/issues"
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
