@@ -24,8 +24,7 @@ Helper for GeoGuessr training using OpenAI
 - with brew
 
 ```bash
-brew tap rioriost/tap
-brew install ggai
+brew install rioriost/tap/ggai
 ```
 
 ## Usage
