@@ -3,8 +3,8 @@ class Ggai < Formula
 
   desc "Helper for GeoGuessr training using OpenAI"
   homepage "https://github.com/rioriost/ggai"
-  url "https://github.com/rioriost/ggai/releases/download/0.5.6/ggai-0.5.6.tar.gz"
-  sha256 "eda6d1e0e1497568c7f7f0974d7475593557f7ab0bcf9620f5bed23b790a9381"
+  url "https://github.com/rioriost/ggai/releases/download/0.5.7/ggai-0.5.7.tar.gz"
+  sha256 "16c57371839c90d3d85aded4a186aac2a147317eab6838391cd2e0b6bba2918b"
   license "MIT"
 
   depends_on "python@3.14"
@@ -2451,7 +2451,7 @@ class Ggai < Formula
       end
     end
 
-    venv.pip_install buildpath
+    venv.pip_install buildpath/"src"
     bin.install_symlink libexec/"bin/ggai"
   end
 
